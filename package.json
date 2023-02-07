@@ -1,0 +1,28 @@
+{
+	"name": "waves-example-libraries",
+	"version": "0.0.0",
+	"description": "waves-example-libraries",
+	"main": "index.js",
+	"scripts": {
+		"test": "react-scripts test --watchAll=false --env=node --passWithNoTests",
+		"start": "next dev",
+		"build": "next build",
+		"prod": "next start",
+		"lint": "next lint",
+		"tslint": "tslint -c tslint.json 'src/**/*.ts?(x)'",
+		"update-locales": "bin/update-locales.sh",
+		"update-locales-win": "cd bin && update-locales.bat",
+		"postinstall": "npx husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "github.com/overtag/Waves-Example-Libraries.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@waves/provider-seed": "^0.3.2",
+		"@waves/ts-lib-crypto": "^1.4.4-beta.1",
+		"@waves/waves-transactions": "^4.2.10"
+	}
+}
